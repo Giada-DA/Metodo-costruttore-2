@@ -8,9 +8,9 @@ public class Tester {
         student1.grade = 6;
         student2.name = "Marie Curie";
         student2.grade = 10;
-        //System.out.println("The student name is " + student1.name + " and his grade is " + student1.grade);
-        student1.getStudentDetails(student1.name,student1.grade);
-        student2.getStudentDetails(student2.name, student2.grade);
+
+        student1.getStudentDetails();
+        student2.getStudentDetails();
 
         System.out.println("-----------------------------");
         // creando un insegnante + nome
@@ -21,6 +21,7 @@ public class Tester {
 
         teacher.assignGrade(student1,5);
         teacher.assignGrade(student2,9);
-
+        student1.getStudentDetails();
+        student2.getStudentDetails();
     }
 }
